@@ -1,12 +1,21 @@
 #!/bin/bash
 
+
+
+# Renkler
+YESIL='\033[0;32m'
+SARI='\033[1;33m'
+KIRMIZI='\033[0;31m'
+NC='\033[0m'
+
 # --- KULLANIM KILAVUZU ---
 # Eğer kullanıcı argüman girmezse nasıl kullanılacağını göster
 if [ -z "$1" ] || [ -z "$2" ]; then
     echo "HATA: Eksik parametre girdiniz."
-    echo "Kullanım: ./nginx_multi.sh [ISIM] [PORT]"
-    echo "Örnek:   ./nginx_multi.sh site1 8081"
-    echo "Örnek:   ./nginx_multi.sh blog 8082"
+    echo "  "
+    echo -e "${KIRMIZI}Kullanım: ${NC} ./nginx_multi.sh [ISIM] [PORT]"
+    echo -e "${SARI}Örnek:   ${NC} ./nginx_multi.sh site1 8081"
+    echo -e "${SARI}Örnek:   ${NC} ./nginx_multi.sh blog 8082"
     exit 1
 fi
 
@@ -20,11 +29,6 @@ PORT="$2"
 PROJE_DIZINI="$HOME/podman-websiteleri/$KONTEYNER_ADI"
 IMAGE="docker.io/library/nginx:latest"
 
-# Renkler
-YESIL='\033[0;32m'
-SARI='\033[1;33m'
-KIRMIZI='\033[0;31m'
-NC='\033[0m'
 
 echo -e "${YESIL}--- Podman Kurulumu Başlatılıyor: $KONTEYNER_ADI ($PORT) ---${NC}"
 
