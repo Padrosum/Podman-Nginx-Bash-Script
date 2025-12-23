@@ -1,4 +1,4 @@
-# Podman-Nginx-Bash-Script
+# PNBS
 Podman aracı ile nginx otomatik konteyner kurulum scripti.
 
 Bildiğiniz üzere podman ile normal bir nginx konteynerı kurulumunda içerisindeki html dosyasını düzenleme işlemleri biraz sıkıntı. Bu yüzden bu script ile 
