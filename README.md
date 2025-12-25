@@ -20,3 +20,5 @@ Bash aracı ise .sh dosyalarını çalıştırmayı sağlayan bir CLI yazılım�
 
 ### Lisans 
 Halka mal edilmiş yazılım
+
+Gemini AI kullanılmıştır.
